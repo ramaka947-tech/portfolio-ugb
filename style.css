@@ -1,0 +1,95 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.gradient-hero {
+    background: radial-gradient(ellipse at 0% 50%, rgba(139, 0, 0, 0.4) 0%, transparent 50%), #1a1a1a;
+}
+
+.gradient-contact {
+    background: radial-gradient(ellipse at 50% 0%, rgba(139, 0, 0, 0.3) 0%, transparent 60%), #1a1a1a;
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    border-color: rgba(233, 30, 140, 0.4) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.bar-fill {
+    transition: width 1s ease;
+}
+
+.top-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #e91e8c;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+}
+
+.top-line:hover::before {
+    transform: scaleX(1);
+}
+
+.btn-pink {
+    background: #e91e8c;
+    transition: all 0.3s;
+    box-shadow: 0 6px 20px rgba(233, 30, 140, 0.35);
+}
+
+.btn-pink:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(233, 30, 140, 0.5);
+}
+
+.btn-outline {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    border-color: #e91e8c;
+    color: #e91e8c;
+    transform: translateY(-3px);
+}
+
+.nav-link {
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #e91e8c;
+}
+
+.contact-card {
+    transition: all 0.3s;
+}
+
+.contact-card:hover {
+    border-color: #e91e8c;
+    background: rgba(233, 30, 140, 0.1);
+    transform: translateY(-4px);
+}
+
+
+#mobile-menu {
+    display: none;
+}
+
+#mobile-menu.open {
+    display: flex;
+}
